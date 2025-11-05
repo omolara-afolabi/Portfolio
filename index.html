@@ -1,156 +1,145 @@
 # Portfolio
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Felicia Omolara Afolabi — Data Analyst Portfolio</title>
-  <meta name="description" content="Portfolio of Felicia Omolara Afolabi — Data Analyst. SQL, Python, Power BI, Excel, dashboards, reports. Contact: afolabiomolara1810@gmail.com" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felicia Omolara Afolabi | Data Analyst Portfolio</title>
   <style>
-    :root{--accent:#2a9d8f;--muted:#6b7280;--bg:#f7faf9;--card:#ffffff;--text:#0f172a}
-    *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,#f8fbfb,#eef7f6); color:var(--text);}
-    .container{max-width:1100px;margin:32px auto;padding:28px}
-    header{display:flex;gap:20px;align-items:center}
-    .avatar{width:120px;height:120px;border-radius:12px;overflow:hidden;flex:0 0 120px;border:6px solid #fff;box-shadow:0 6px 20px rgba(0,0,0,0.08)}
-    .avatar img{width:100%;height:100%;object-fit:cover}
-    h1{font-size:24px;margin:0}
-    p.lead{margin:6px 0 0;color:var(--muted)}
-    .top-actions{margin-left:auto;display:flex;gap:10px}
-    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
-
-    main{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:26px}
-    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(23,35,49,0.04)}
-    .about h2{margin-top:0}
-    ul.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:8px 0 0;list-style:none}
-    ul.skills li{background:#eefaf9;color:var(--text);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
-
-    .works{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-    .work-card{display:flex;gap:12px;align-items:flex-start}
-    .work-card img{width:88px;height:64px;border-radius:8px;object-fit:cover;flex-shrink:0}
-    .work-card h3{margin:0;font-size:15px}
-    .work-card p{margin:6px 0 0;color:var(--muted);font-size:13px}
-
-    .contact .row{display:flex;gap:10px;align-items:center}
-    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
-
-    .socials{display:flex;gap:10px;margin-top:10px}
-    .socials a{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:#fff;border:1px solid #e6eef0;text-decoration:none;color:var(--text);font-weight:600}
-
-    footer{margin-top:24px;font-size:13px;color:var(--muted);text-align:center}
-
-    /* responsive */
-    @media (max-width:900px){main{grid-template-columns:1fr;}.works{grid-template-columns:1fr}}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 0.5rem;
+    }
+    .works img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .works {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .contact-form {
+      background-color: #e9ecef;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #003366;
+      color: #fff;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0055aa;
+    }
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    a {
+      color: #0055aa;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="avatar card"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Felicia Omolara Afolabi"></div>
-      <div>
-        <h1>Felicia Omolara Afolabi</h1>
-        <p class="lead">Data Analyst — SQL • Python • Power BI • Excel — HR, Healthcare & Consulting</p>
-        <p style="margin:8px 0 0;color:var(--muted)">I transform raw data into actionable insight using SQL, Python (Pandas, NumPy, Matplotlib), Excel and Power BI. I design dashboards and executive reports to support strategic decision-making.</p>
-      </div>
-      <div class="top-actions">
-        <a class="btn" href="mailto:afolabiomolara1810@gmail.com">Email Me</a>
-        <a class="btn" href="#works" style="background:#264653">View Work</a>
-      </div>
-    </header>
+  <header>
+    <img src="https://github.com/omolara-afolabi/Portfolio/blob/main/felicia.png?raw=true" alt="Felicia Omolara Afolabi" />
+    <h1>Felicia Omolara Afolabi</h1>
+    <p>Data Analyst | Available for Remote Work | Durban, South Africa</p>
+  </header>
 
-    <main>
-      <section>
-        <div class="card about">
-          <h2>About Me</h2>
-          <p>I am a data analyst skilled in data extraction, cleaning, automation, statistical analysis and visualization. I build dynamic dashboards and executive reports using Excel, Power BI, SQL and Python to support decision-making across HR, Healthcare and Consulting industries.</p>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Felicia Omolara Afolabi, a passionate Data Analyst with a multifaceted skill set in data extraction, cleaning, and analysis. My expertise spans SQL and Python, with hands-on experience using Pandas, NumPy, and Matplotlib for data manipulation, automation, and visualization. I specialize in building dynamic dashboards and executive reports using Excel, Power BI, SQL, and Python to support decision-making processes across industries such as HR, Healthcare, and Consulting.</p>
+  </section>
 
-          <h3 style="margin-top:16px">Technical Skills</h3>
-          <ul class="skills">
-            <li>SQL (T-SQL, PostgreSQL)</li>
-            <li>Python (Pandas, NumPy, Matplotlib)</li>
-            <li>Power BI & DAX</li>
-            <li>Excel (Pivot, Power Query)</li>
-            <li>Data Cleaning & ETL</li>
-            <li>Dashboarding & Reporting</li>
-          </ul>
-        </div>
+  <section id="works">
+    <h2>My Works</h2>
+    <div class="works">
+      <img src="https://github.com/omolara-afolabi/Portfolio/blob/main/Consulting%20Dashboard.png?raw=true" alt="Consulting Dashboard" />
+      <img src="https://github.com/omolara-afolabi/Portfolio/blob/main/Healthcare%20Dashboard.png?raw=true" alt="Healthcare Dashboard" />
+      <img src="https://github.com/omolara-afolabi/Portfolio/blob/main/Pizza%20dashboard.png?raw=true" alt="Pizza Dashboard" />
+      <img src="https://github.com/omolara-afolabi/Portfolio/blob/main/Sales%20Dashboard.png?raw=true" alt="Sales Dashboard" />
+      <img src="https://github.com/omolara-afolabi/Portfolio/blob/main/Tableau%20HR%20Dashboard.png?raw=true" alt="HR Dashboard" />
+    </div>
+    <p>You can view more of my work on my <a href="https://github.com/omolara-afolabi" target="_blank">GitHub Portfolio</a>.</p>
+  </section>
 
-        <div id="works" class="card" style="margin-top:18px">
-          <h2>Selected Works</h2>
-          <div class="works">
-            <div class="work-card">
-              <img src="/mnt/data/7bd6a1eb-d969-466b-b9d9-d5b6d4c243bd.png" alt="ExpertEdge Dashboard">
-              <div>
-                <h3>ExpertEdge Consulting Analytics</h3>
-                <p>Power BI executive dashboard showing projects, revenue, budget utilization and trends for consulting services.</p>
-              </div>
-            </div>
+  <section id="resume">
+    <h2>My CV</h2>
+    <p>Download my resume for more details about my experience and skills:</p>
+    <a href="https://github.com/omolara-afolabi/Portfolio/blob/main/Felicia%20Omolara%20Afolabi%20-%20DATA%20ANALYST.pdf?raw=true" target="_blank">📄 Download CV</a>
+  </section>
 
-            <div class="work-card">
-              <img src="/mnt/data/0f1acaf7-e67d-4e28-b2cc-de63a7688f8c.png" alt="Healthcare Dashboard">
-              <div>
-                <h3>Healthcare Executive Summary</h3>
-                <p>Healthcare report dashboard with KPIs for doctors, hospitals, patients and billing — insight for administrators and policy analysts.</p>
-              </div>
-            </div>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/mayvpjwj" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <p>📧 Email: <a href="mailto:afolabiomolara1810@gmail.com">afolabiomolara1810@gmail.com</a></p>
+    <p>📍 Location: Durban, South Africa</p>
+    <p>🌍 Available for Remote Work</p>
+  </section>
 
-            <div class="work-card">
-              <img src="/mnt/data/164a9f22-2ae9-4a24-90bb-2ffb73241dc2.png" alt="Pizza Report">
-              <div>
-                <h3>Pizza Sales Report (2015)</h3>
-                <p>Sales and revenue analysis with category/size breakdowns, daily and monthly trends — useful for merchandising and operations.</p>
-              </div>
-            </div>
-
-            <div class="work-card">
-              <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Sample Project">
-              <div>
-                <h3>Sample SQL Automation</h3>
-                <p>ETL automation scripts and data quality checks that standardize datasets and improve reporting cadence.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:18px">
-          <h2>Approach & Process</h2>
-          <p style="color:var(--muted)">I follow a structured workflow: problem framing → data extraction (SQL/Python) → cleaning & transformation (Pandas/Power Query) → analysis & modelling → visualization (Power BI/Excel/Matplotlib) → delivery and stakeholder feedback.</p>
-        </div>
-
-      </section>
-
-      <aside>
-        <div class="card contact">
-          <h2>Contact</h2>
-          <div class="row" style="margin:8px 0">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="flex-shrink:0"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11z" stroke="#c0d7d2" stroke-width="1.2" fill="#f7fffe"/></svg>
-            <a href="mailto:afolabiomolara1810@gmail.com">afolabiomolara1810@gmail.com</a>
-          </div>
-
-          <h3 style="margin-top:14px">Social</h3>
-          <div class="socials">
-            <a href="https://www.linkedin.com/in/felicia-afolabi" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://github.com/feliciaafolabi" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://twitter.com/felicia_af" target="_blank" rel="noopener">Twitter</a>
-          </div>
-
-          <h3 style="margin-top:14px">Resume</h3>
-          <p style="margin:6px 0"><a class="btn" href="#" download="Felicia_Afolabi_CV.pdf">Download CV</a></p>
-
-        </div>
-
-        <div class="card" style="margin-top:18px">
-          <h3>Quick Stats</h3>
-          <p style="font-size:20px;margin:6px 0 0">Industry focus: <strong>HR, Healthcare, Consulting</strong></p>
-          <p style="margin:6px 0;color:var(--muted)">Tools: SQL, Python, Power BI, Excel, Pandas, NumPy, Matplotlib</p>
-        </div>
-
-      </aside>
-    </main>
-
-    <footer>
-      <p>Built by Felicia Omolara Afolabi • <a href="mailto:afolabiomolara1810@gmail.com">afolabiomolara1810@gmail.com</a></p>
-    </footer>
-  </div>
+  <footer>
+    <p>Connect with me on social media:</p>
+    <p>
+      <a href="https://github.com/omolara-afolabi" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/felicia-omolara-afolabi" target="_blank">LinkedIn</a>
+    </p>
+    <p>&copy; 2025 Felicia Omolara Afolabi. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
